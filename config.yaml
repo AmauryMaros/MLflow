@@ -1,0 +1,14 @@
+experiment_name: "Titanic_Classification"
+tracking_uri: "file:./mlruns"
+
+data:
+  path: "https://raw.githubusercontent.com/datasciencedojo/datasets/master/titanic.csv"
+  target: "Survived"
+
+model:
+  name: "RandomForestClassifier"
+  param_grid:
+    classifier__max_depth: [3, 5, 10]
+    classifier__n_estimators: [100, 200]
+    classifier__min_samples_split: [2, 5]
+
