@@ -1,7 +1,7 @@
 # Création venv
 python -m venv .venv
 
-# Activatio venv
+# Activation venv
 source .venv/bin/activate
 
 # Installation dépendances
